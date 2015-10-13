@@ -51,7 +51,6 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Graduate);
 
-
 /************** Overrides ***************/
 html, body {
   height: 100%;
@@ -119,6 +118,7 @@ body { padding-top: 50px; }
     img { height: 40px; margin-top: -15px; }
   }
   .navbar-toggle {
+    z-index: 999;
     background-color: @color-brand;
     .icon-bar { background-color: @color-white; }
   }
@@ -129,8 +129,6 @@ body { padding-top: 50px; }
 }
 @media (min-width: 769px) {
   .navbar-nav>li>a {
-//    padding-top: 25px;
-//    padding-bottom: 25px;
     &.active, &:hover {
       background-color: @color-brand;
       color: @color-white;
@@ -195,6 +193,11 @@ body { padding-top: 50px; }
   margin-bottom: 30px;
   .pic-row > div { height: 200px; }
 }
+/* FORM ********************************/
+.required-message, .ss-password-warning { display: none }
+input#ss-submit {
+  .btn-primary;
+}
 
 /* Footer *******************************************************/
 .footer { 
@@ -209,7 +212,4 @@ body { padding-top: 50px; }
   color: gray;
   font-size: 12px;
   a { color: gray; }
-}
-#body-content-wrapper {
-  padding-bottom: 15px;
 }

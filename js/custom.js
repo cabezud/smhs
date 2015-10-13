@@ -15,19 +15,4 @@ $(function() {
         offset: 200
       });
 
-	//Equal height columns	
-	var equalHeightColumns = function() {
-		var leftCol = $('.left').height();
-		var rightCol = $('.right').height();
-		if ( leftCol > rightCol ) {
-			$('.right, .left').height(leftCol);
-		} else {
-			$('.right, .left').height(rightCol);
-		}
-	};
-	$( window ).bind('orientationchange resize', function() {
-	    equalHeightColumns();
-	});
-	equalHeightColumns();
-
 });
