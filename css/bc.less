@@ -81,6 +81,9 @@ ul {
   letter-spacing: 6px;
   font-family: 'Graduate';
 }
+.btn {
+  border-radius: 4px !important;
+}
 .btn-primary {
   background-color: @color-brand;
   border: none;
@@ -118,7 +121,7 @@ body { padding-top: 50px; }
     img { height: 40px; margin-top: -15px; }
   }
   .navbar-toggle {
-    z-index: 999;
+    z-index: 999; //make able to click
     background-color: @color-brand;
     .icon-bar { background-color: @color-white; }
   }
@@ -196,6 +199,7 @@ body { padding-top: 50px; }
 /* FORM ********************************/
 .required-message, .ss-password-warning { display: none }
 input#ss-submit {
+  .btn;
   .btn-primary;
 }
 

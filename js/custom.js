@@ -15,4 +15,11 @@ $(function() {
         offset: 200
       });
 
+
+});
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
 });
