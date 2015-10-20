@@ -15,6 +15,21 @@ $(function() {
         offset: 200
       });
 
+      $('#pics img').on('click',function(){
+        var src = $(this).attr('src');
+        var img = '<img src="' + src + '" class="img-responsive"/>';
+        $('#picsModal').modal();
+        $('#picsModal').on('shown.bs.modal', function(){
+            $('#picsModal .modal-body').html(img);
+        });
+        $('#picsModal').on('hidden.bs.modal', function(){
+            $('#picsModal .modal-body').html('');
+        });
+      });
+
+      $('#picsModal').click(function(){
+        $('.modal').modal('hide');
+      });
 
 });
 

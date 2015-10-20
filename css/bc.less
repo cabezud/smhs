@@ -8,7 +8,7 @@
 @color-white: white;
 @color-transparent-white: rgba(255, 255, 255, 0.5);
 @color-black: black;
-@color-transparent-black: rgba(0, 0, 0, 0.5);
+@color-transparent-black: rgba(0, 0, 0, 0.3);
 @color-gray: gray;
 @color-light-gray: #F1F1F1;
 @color-dark-gray: darkgray;
@@ -98,6 +98,11 @@ ul {
   background-color: @color-brand-dark;
   color: @color-white;
 }
+modal img {
+    display: block;
+    margin: 0 auto;
+}
+
 .close {
   color: @color-white;
   opacity: 1;
@@ -198,7 +203,10 @@ body { padding-top: 50px; }
 #pics {
   margin-top: 30px;
   margin-bottom: 30px;
-  .pic-row > div { height: 200px; }
+  .pic-row > div { 
+    height: 200px; 
+    img { max-height: 180px; }
+  }
 }
 /* FORM ********************************/
 .required-message, .ss-password-warning { display: none }
