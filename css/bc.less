@@ -77,9 +77,12 @@ ul {
 .super-title {
   margin-top: 30px;
   margin-bottom: 25px;
-  letter-spacing: 6px;
   font-family: 'Graduate';
 }
+@media (min-width: 769px) {
+  .super-title { letter-spacing: 6px; }
+}
+
 .btn {
   border-radius: 4px !important;
 }
@@ -227,7 +230,7 @@ input#ss-submit {
   .btn-primary;
 }
 @media (min-width: 769px) {
-  input#ss-submit {margin-left: 75%;}
+  input#ss-submit { margin-left: 75%;}
 }
 
 /* CONTACT-US ********************************/
