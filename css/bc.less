@@ -199,19 +199,41 @@ body { padding-top: 50px; }
   padding-bottom: 45px;
 }
 
+/* PICS ********************************/
+
 #pics {
   margin-top: 30px;
   margin-bottom: 30px;
   .pic-row > div { 
     height: 200px; 
-    img { max-height: 180px; }
+    img { 
+      max-height: 180px; 
+      display: block; margin: auto;
+    }
+    h2,h3,h4,h5,h6 {
+      position: absolute;
+      bottom: 15px;
+    }
   }
 }
+
+#picsModal img { display: block; margin: auto; }
+
+
 /* FORM ********************************/
 .required-message, .ss-password-warning { display: none }
 input#ss-submit {
   .btn;
   .btn-primary;
+}
+@media (min-width: 769px) {
+  input#ss-submit {margin-left: 75%;}
+}
+
+/* CONTACT-US ********************************/
+#contact-us {
+  h5 { margin-bottom: 0px; }
+  a { font-size: 70%; }
 }
 
 /* Footer *******************************************************/
