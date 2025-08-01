@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#OpenSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular') format('svg');
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans-Light-webfont.eot');
+  src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#OpenSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Graduate';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/graduate/v18/C8cg4cs3o2n15t_2YygW43k.ttf) format('truetype');
+}
+/************** Overrides ***************/
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 15px;
+  font-family: 'OpenSans-Light', sans-serif;
+}
+a {
+  color: black;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #001058;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Graduate';
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.dropdown-menu {
+  padding: 15px;
+}
+.dropdown-menu li a:hover {
+  color: white;
+  background-color: #00146c;
+}
+.test {
+  border: 1px dotted red;
+}
+.super-title {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-family: 'Graduate';
+}
+@media (min-width: 769px) {
+  .super-title,
+  .headline {
+    letter-spacing: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .super-title {
+    font-size: 25px;
+  }
+}
+.btn {
+  border-radius: 4px !important;
+}
+.btn-primary {
+  background-color: #0027D7;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  padding: 12px 30px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+.btn-primary:hover {
+  background-color: #001058;
+  color: white;
+}
+.modal-header {
+  background-color: #001058;
+  color: white;
+}
+modal img {
+  display: block;
+  margin: 0 auto;
+}
+.close {
+  color: white;
+  opacity: 1;
+}
+/************** Navbar ***************/
+body {
+  padding-top: 50px;
+}
+#top-navbar {
+  background-color: white;
+  -webkit-box-shadow: 0 8px 6px -6px darkgray;
+  box-shadow: 0 8px 6px -6px black;
+  font-size: 15px;
+}
+#top-navbar .navbar-brand {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  height: 50px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 60px;
+}
+#top-navbar .navbar-brand img {
+  height: 40px;
+  margin-top: -15px;
+}
+#top-navbar .navbar-toggle {
+  z-index: 999;
+  background-color: #0027D7;
+}
+#top-navbar .navbar-toggle .icon-bar {
+  background-color: white;
+}
+#top-navbar .navbar-collapse {
+  background-color: white;
+}
+@media (min-width: 769px) {
+  .navbar-nav > li > a.active,
+  .navbar-nav > li > a:hover {
+    background-color: #0027D7;
+    color: white;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  #top-navbar .navbar-header {
+    margin-right: -20%;
+  }
+}
+/************** Billboard ***************/
+#billboard .row {
+  background: url("../img/people.jpg") no-repeat bottom center;
+  background-size: cover;
+  min-height: 450px;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+#billboard .row .billboard-title {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+@media (max-width: 769px) {
+  #billboard .row .billboard-title {
+    padding-top: 1px;
+    padding-bottom: 15px;
+  }
+}
+#billboard .row .headline {
+  margin-top: 80px;
+  font-size: 30px;
+  font-family: 'Graduate';
+  line-height: 30px;
+}
+#billboard .row .tagline {
+  margin-bottom: 30px;
+  margin-left: 15%;
+  font-family: 'Graduate';
+  border-top: 2px solid #0027D7;
+  padding-top: 10px;
+  width: 70%;
+  font-size: 20px;
+  letter-spacing: 5px;
+  line-height: 26px;
+  text-shadow: 3px 3px 7px dimgray;
+}
+#billboard .row a {
+  background-color: #0027D7;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  padding: 12px 30px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  margin-top: 150px;
+}
+#billboard .row a:hover {
+  background-color: #001058;
+  color: white;
+}
+.frame {
+  border: 20px solid #00146c;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+/* PICS ********************************/
+#pics {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#pics .pic-row > div {
+  height: 200px;
+}
+#pics .pic-row > div img {
+  max-height: 180px;
+  display: block;
+  margin: auto;
+}
+#pics .pic-row > div h2,
+#pics .pic-row > div h3,
+#pics .pic-row > div h4,
+#pics .pic-row > div h5,
+#pics .pic-row > div h6 {
+  position: absolute;
+  bottom: 15px;
+}
+#picsModal img {
+  display: block;
+  margin: auto;
+}
+/* FORM ********************************/
+.required-message,
+.ss-password-warning {
+  display: none;
+}
+input#ss-submit {
+  border-radius: 4px !important;
+  background-color: #0027D7;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  padding: 12px 30px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+input#ss-submit:hover {
+  background-color: #001058;
+  color: white;
+}
+@media (min-width: 769px) {
+  input#ss-submit {
+    margin-left: 75%;
+  }
+}
+/* CONTACT-US ********************************/
+#contact-us h5 {
+  margin-bottom: 0px;
+}
+#contact-us a {
+  font-size: 80%;
+  margin-bottom: 15px;
+}
+#contact-us img {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+}
+/* Footer *******************************************************/
+.footer {
+  background-color: black;
+  padding: 12px 30px;
+}
+.footer .footer-wrap {
+  padding-top: 7px;
+}
+.footer .credit {
+  color: gray;
+  font-size: 12px;
+}
+.footer .credit a {
+  color: gray;
+}
